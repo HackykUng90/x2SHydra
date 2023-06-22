@@ -1,0 +1,227 @@
+   game:GetService("Players").LocalPlayer.Character.Humanoid.UseJumpPower = false
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Consistt/Ui/main/UnLeaked"))()
+
+
+library.rank = "Member"
+local Wm = library:Watermark("Gay hub💤 | v" .. library.version ..  " | " .. library:GetUsername() .. " | rank: " .. library.rank)
+local FpsWm = Wm:AddWatermark("fps: " .. library.fps)
+coroutine.wrap(function()
+    while wait(.75) do
+        FpsWm:Text("fps: " .. library.fps)
+    end
+end)()
+
+
+local Notif = library:InitNotifications()
+
+for i = 1,0,-1 do 
+    task.wait(0.05)
+    local LoadingXSX = Notif:Notify("Loading Gay hub, รอซะไอ้เกย์.", 3, "information") -- notification, alert, error, success, information
+end 
+
+library.title = "Gay hub 💥💥"
+
+library:Introduction()
+wait(1)
+local Init = library:Init()
+
+local Tab1 = Init:NewTab("รวมฟังชั่น")
+
+local Section1 = Tab1:NewSection("ฟังชั่นเกย์ๆ")
+
+
+local Label1 = Tab1:NewLabel("ฟังชั่นเกย์สำหรับคนเกย์ๆ", "left")--"left", "center", "right"
+
+
+local Toggle1 = Tab1:NewToggle("เอาเหล็กเว้ย 🎞", false, function(value)
+    local vers = value and "on" or "off"
+    local p = game.Players.LocalPlayer.Character.HumanoidRootPart
+        for i,v in pairs(game:GetService("Workspace").MAP.Scraps:GetChildren()) do
+             v.CFrame = p.CFrame
+             wait(0.2)
+        end
+end)
+
+
+
+local Toggle2 = Tab1:NewToggle("เก็บปืนพลุ 💥", false, function(value)
+    local vers = value and "on" or "off"
+    for i,v in pairs(game:GetService("workspace").MiscSystems.FlareGunSystem.FlareGun) do
+        if v.Name == "TouchInterest" then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame
+          end
+      end
+end)
+
+
+
+local Label2 = Tab1:NewLabel("คนเทพเข้าใช้กัน", "left")
+
+local Button1 = Tab1:NewButton("ปืนโอดิน 🏹", function()
+    _G.inf =  true -- "true" on "false" off
+spawn(function()
+    if _G.inf then
+for i,v in next, getgc(true) do
+    if type(v) == "table" and rawget(v, 'BulletsPerShot') then
+        coroutine.wrap(function()
+        while wait(0.1) do
+            v.BulletsPerShot = 65
+                    end
+                end)()
+            end
+        end
+    end
+end)
+
+end)
+
+local Button2 = Tab1:NewButton("ซุสชักว่าว ⚔", function()
+    _G.inf =  true -- "true" on "false" off
+spawn(function()
+    if _G.inf then
+for i,v in next, getgc(true) do
+    if type(v) == "table" and rawget(v, 'KnockTime') then
+        coroutine.wrap(function()
+        while wait(0.1) do
+        v.KnockTime = 1
+        v.KnockMode = "Default"
+        v.DebounceTime = 0.1
+        v.ComboEndTime = 0.2
+        v.ConcusseTime = 0
+        v.ConcusseStrength = 100
+                    end
+                end)()
+            end
+        end
+    end
+end)
+
+end)
+
+
+
+
+
+local Label3 = Tab1:NewLabel("รอต่อไปกูไม่รู้จะทำไรละ", "left")--"left", "center", "right"
+
+
+
+local Tab2 = Init:NewTab("คนเกย์")
+
+
+
+local Slider1 = Tab2:NewSlider("วิ่งแบบเกย์", "", true, "/", {min = 1, max = 100, default = 20}, function(value)
+    while wait() do
+    local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local Character = LocalPlayer.Character
+
+local WALKSPEED_VALUE = (value)  -- ค่า WalkSpeed ที่คุณต้องการ
+
+Character.Humanoid.WalkSpeed = WALKSPEED_VALUE
+
+local function CheckWalkSpeed()
+    if Character and Character:FindFirstChild("Humanoid") then
+        if Character.Humanoid.WalkSpeed ~= WALKSPEED_VALUE then
+            Character.Humanoid.WalkSpeed = WALKSPEED_VALUE
+            end
+        end
+    end
+end
+
+game:GetService("RunService").Stepped:Connect(CheckWalkSpeed)
+
+end)
+
+local Slider2 = Tab2:NewSlider("กระโดดแบบเกย์เก่", "", true, "/", {min = 1, max = 100, default = 20}, function(value)
+    
+    game:GetService("Players").LocalPlayer.Character.Humanoid.JumpHeight = (value)
+end)
+
+
+
+local Tab3 = Init:NewTab("เกย์วาปได้")
+
+
+local Section1 = Tab3:NewSection("✌  วาปได้ก็เดินเหมือนกัน")
+
+
+local Button1 = Tab3:NewButton("🛒  ร้านค้า  🛒", function()
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
+    tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(19.85301971435547, 15.44151496887207, -275.60955810546875)}):Play()
+
+end)
+
+
+local Button2 = Tab3:NewButton("💢  ถ้ำ เดอะเกย์  💢", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-158.0469970703125, 23.28793716430664, 50.80705261230469)
+end)
+
+local Button3 = Tab3:NewButton("✨  ป้ายโฆษณา  ✨", function()
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
+    tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(425.87677001953125, 42.420047760009766, -104.72442626953125)}):Play()
+
+end)
+
+local Button4 = Tab3:NewButton("👔  ตึกใหม่  👔", function()
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
+    tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-356.9730529785156, 23.767967224121094, -83.13800048828125)}):Play()
+
+end)
+
+local Button5 = Tab3:NewButton("🧔  โบสถ์  🧔", function()
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
+tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(460.54693603515625, 36.61536407470703, 16.59142303466797)}):Play()
+
+end)
+
+local Button6 = Tab3:NewButton("💋  โดม  💋", function()
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
+tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-23.001941680908203, 19.83708381652832, 199.65081787109375)}):Play()
+
+end)
+
+local Button7 = Tab3:NewButton("🥂 บ้านกุ 🥂", function()
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
+tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-3.784085273742676, 19.282543182373047, 97.21668243408203)}):Play()
+
+end)
+
+local Button8 = Tab3:NewButton("👩‍👩‍👦 บ้านป้า 👩‍👩‍👦", function()
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
+tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(347.6062316894531, 8.775764465332031, -16.491790771484375)}):Play()
+
+end)
+
+local Button9 = Tab3:NewButton("🏁 รูปปั้น เคารพ เกย์ 🏁", function()
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
+tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-113.63513946533203, 23.0413818359375, -167.73239135742188)}):Play()
+
+end)
+
+local Button10 = Tab3:NewButton("🍀 ตึกเก่า 🍀", function()
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
+tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-185.94085693359375, 60.53200149536133, -243.87962341308594)}):Play()
+
+end)
+
+local Button11 = Tab3:NewButton("🥇 ลอตเตอรี่ 🥇", function()
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
+tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-263.64581298828125, 18.18828010559082, -335.36688232421875)}):Play()
+
+end)
+
+local Button12 = Tab3:NewButton("🐱‍👤 หออัยเฟ่ล 🐱‍👤", function()
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
+tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-271.0495910644531, 77.37397003173828, -197.35452270507812)}):Play()
+
+end)
+
+local Button13 = Tab3:NewButton("🧩 ใต้ดิน(safe zone 🧩)", function()
+    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
+tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-453.78167724609375, -28.61730194091797, -119.84738159179688)}):Play()
+
+end)
+
+
+local FinishedLoading = Notif:Notify("Loaded Link Start", 4, "success")
