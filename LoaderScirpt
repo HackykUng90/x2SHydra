@@ -147,9 +147,7 @@ local Section1 = Tab3:NewSection("✌  วาปได้ก็เดินเ�
 
 
 local Button1 = Tab3:NewButton("🛒  ร้านค้า  🛒", function()
-    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
-    tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(19.85301971435547, 15.44151496887207, -275.60955810546875)}):Play()
-
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(19.85301971435547, 15.421333312988281, -275.60955810546875)
 end)
 
 
@@ -158,69 +156,47 @@ local Button2 = Tab3:NewButton("💢  ถ้ำ เดอะเกย์  💢",
 end)
 
 local Button3 = Tab3:NewButton("✨  ป้ายโฆษณา  ✨", function()
-    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
-    tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(425.87677001953125, 42.420047760009766, -104.72442626953125)}):Play()
-
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(425.87677001953125, 42.41455841064453, -104.72442626953125)
 end)
 
 local Button4 = Tab3:NewButton("👔  ตึกใหม่  👔", function()
-    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
-    tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-356.9730529785156, 23.767967224121094, -83.13800048828125)}):Play()
-
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-356.9730529785156, 23.21448516845703, -83.13800048828125)
 end)
 
 local Button5 = Tab3:NewButton("🧔  โบสถ์  🧔", function()
-    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
-tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(460.54693603515625, 36.61536407470703, 16.59142303466797)}):Play()
-
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(460.5466003417969, 36.14577865600586, 16.59095001220703)
 end)
 
 local Button6 = Tab3:NewButton("💋  โดม  💋", function()
-    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
-tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-23.001941680908203, 19.83708381652832, 199.65081787109375)}):Play()
-
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-23.001941680908203, 19.39417839050293, 199.65081787109375)
 end)
 
 local Button7 = Tab3:NewButton("🥂 บ้านกุ 🥂", function()
-    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
-tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-3.784085273742676, 19.282543182373047, 97.21668243408203)}):Play()
-
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3.7840850353240967, 18.98503303527832, 97.21668243408203)
 end)
 
 local Button8 = Tab3:NewButton("👩‍👩‍👦 บ้านป้า 👩‍👩‍👦", function()
-    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
-tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(347.6062316894531, 8.775764465332031, -16.491790771484375)}):Play()
-
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(347.60736083984375, 9.057371139526367, -16.490455627441406)
 end)
 
 local Button9 = Tab3:NewButton("🏁 รูปปั้น เคารพ เกย์ 🏁", function()
-    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
-tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-113.63513946533203, 23.0413818359375, -167.73239135742188)}):Play()
-
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-113.63513946533203, 22.669477462768555, -167.73239135742188)
 end)
 
 local Button10 = Tab3:NewButton("🍀 ตึกเก่า 🍀", function()
-    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
-tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-185.94085693359375, 60.53200149536133, -243.87962341308594)}):Play()
-
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-185.94085693359375, 60.532623291015625, -243.87962341308594)
 end)
 
 local Button11 = Tab3:NewButton("🥇 ลอตเตอรี่ 🥇", function()
-    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
-tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-263.64581298828125, 18.18828010559082, -335.36688232421875)}):Play()
-
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-263.64581298828125, 17.522197723388672, -335.36688232421875)
 end)
 
 local Button12 = Tab3:NewButton("🐱‍👤 หออัยเฟ่ล 🐱‍👤", function()
-    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
-tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-271.0495910644531, 77.37397003173828, -197.35452270507812)}):Play()
-
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-271.0495910644531, 76.33186340332031, -197.35452270507812)
 end)
 
 local Button13 = Tab3:NewButton("🧩 ใต้ดิน(safe zone 🧩)", function()
-    tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1.5, Enum.EasingStyle.Linear)
-tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(-453.78167724609375, -28.61730194091797, -119.84738159179688)}):Play()
-
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-453.78167724609375, -28.34919548034668, -119.84738159179688)
 end)
 
 
