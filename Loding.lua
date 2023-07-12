@@ -248,7 +248,7 @@ Options.Que:OnChanged(function(S)
     Quest1 = S
 end)
 
-LeftGroupBox:AddToggle('Tof', {Text = 'Auto Chests', Default = false,Tooltip = ''})
+LeftGroupBox:AddToggle('Tof', {Text = 'Auto Chest', Default = false,Tooltip = ''})
 Toggles.Tof:OnChanged(function(State)
 Tof = Toggles.Tof.Value 
     RunService.Stepped:Connect(function()
@@ -274,7 +274,7 @@ Tof = Toggles.Tof.Value
     end)
 end)
 
-LeftGroupBox:AddToggle('NIG', {Text = 'Auto Skills', Default = false,Tooltip = ''})
+LeftGroupBox:AddToggle('NIG', {Text = 'Auto Skill', Default = false,Tooltip = ''})
 Toggles.NIG:OnChanged(function(State)
 NIG = Toggles.NIG.Value 
     spawn(function()
@@ -287,7 +287,7 @@ NIG = Toggles.NIG.Value
         end
     end)
 end)
-LeftGroupBox:AddToggle('FRo', {Text = 'Auto Drops', Default = false,Tooltip = ''})
+LeftGroupBox:AddToggle('FRo', {Text = 'Auto Drop', Default = false,Tooltip = ''})
 Toggles.FRo:OnChanged(function(State)
 FRo = Toggles.FRo.Value
     spawn(function()
@@ -336,7 +336,7 @@ Sex = Toggles.Sex.Value
     end)
 end)
 
-RightGroupBox:AddToggle('Roll', {Text = 'ReRoll Race', Default = false,Tooltip = ''})
+RightGroupBox:AddToggle('Roll', {Text = 'RandomRace', Default = false,Tooltip = ''})
 Toggles.Roll:OnChanged(function(State)
 Roll = Toggles.Roll.Value 
     spawn(function()
@@ -377,7 +377,7 @@ ESP.Boxes = Toggles.ESP5.Value
 end)
 
 
-RightGroupBox:AddToggle('SSS1', {Text = 'Player Loop WalkSpeed/JumpPower', Default =  Toggle,Tooltip = 'This is a tooltip'})
+RightGroupBox:AddToggle('SSS1', {Text = 'Walk&Jump', Default =  Toggle,Tooltip = 'This is a tooltip'})
 Toggles.SSS1:OnChanged(function(State)
     Toggle = State 
     Toggles.SSS1.Value = Toggle
@@ -582,7 +582,7 @@ RightGroupBox:AddButton('Rejoin', function()
 end)
 -- I set NoUI so it does not show up in the keybinds menu
 MenuGroup:AddButton('Unload', function() Library:Unload() end)
-MenuGroup:AddLabel('Menu bind'):AddKeyPicker('MenuKeybind', { Default = "RightControl", NoUI = true, Text = 'Menu keybind' }) 
+MenuGroup:AddLabel('Menu bind'):AddKeyPicker('MenuKeybind', { Default = "Delete", NoUI = true, Text = 'Menu keybind' }) 
 
 Library.ToggleKeybind = Options.MenuKeybind 
 ThemeManager:SetLibrary(Library)
